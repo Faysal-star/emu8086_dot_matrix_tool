@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Madimi+One&display=swap') ;
+
+:root {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+  color: #646cff ;
+  font: "Cedarville Cursive", cursive;
+}
+
+.header{
+  margin-bottom: 0px;
+  transform: translateY(-100px);
+}
+
+
+/* Button */
+
+.btn_cls{
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+button {
+  margin: 10px;
+  width: 200px;
+  border-radius: 8px;
+  border: 1px solid #babeff5e;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+
+
+
+/* 5 * 7 grid  */
+.main{
+  height: calc(27px * 7 + 20px);
+  width: calc(27px * 5 + 20px);
+  border: 2px solid #7ab0f7;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 1px;
+  padding: 5px;
+  justify-items: center;
+  align-items: center;
+}
+
+.mini_div{
+  height: 25px;
+  width: 25px;
+  border: 1px solid #7ab0f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display_code{
+  border: 1px solid #787ffc;
+  min-width: 300px;
+  min-height: 40px;
+  padding: 5px 20px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
